@@ -1,25 +1,18 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import Map from "./Map";
 
-function App() {
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <>
+      <Map />
+      <div id="tile-attribution">
+        Map tiles by <a href="http://stamen.com">Stamen Design</a>, under{" "}
+        <a href="http://creativecommons.org/licenses/by/3.0">CC BY 3.0</a>. Data
+        by <a href="http://openstreetmap.org">OpenStreetMap</a>, under{" "}
+        <a href="http://www.openstreetmap.org/copyright">ODbL</a>.
+      </div>
+    </>
   );
-}
+};
 
 export default App;
